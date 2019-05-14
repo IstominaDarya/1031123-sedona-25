@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Sedona!</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="header-logo" href="index.html">
+          <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="photos-and-videos.html">Фото и видео</a></li>
+            <li><a href="state-map.html">Карта штата</a></li>
+            <li class="site-navigation-current">Гостиницы</li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="visually-hidden">Гостиницы Седоны</h1>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <!--Здесь будет форма-->
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <ul class="hotels-list">
+          <li class="hotels-item">
+            <img src="img/amara" width="135" height="90" alt="Фото Amara Resort & Spa">
+              <h3 class="hotel-name">Amara Resort & Spa</h3>
+              <div class="hotel-description">
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 4000 Р.</span>
+              </div>
+              <a class="button details" href="amara.html">Подробнее</a>
+              <a class="button book" href="#">Забронировать</a>
+              <!--Что должно происходить по нажатию кнопки? Добвление в корзину/
+            переход на новую страницу?-->
+            <div class="stars">
+              <img class="star" src="img/star.svg" width="18" height="17" alt="4 звезды">
+              <img class="star" src="img/star.svg" width="18" height="17">
+              <img class="star" src="img/star.svg" width="18" height="17">
+              <img class="star" src="img/star.svg" width="18" height="17">
+            </div>
+            <div class="rating">Рейтинг: 8,5</div>
+          </li>
+
+          <li class="hotels-item">
+              <img src="img/desert" width="135" height="90" alt="Фото Desert Quail Inn">
+                <h3 class="hotel-name">Desert Quail Inn</h3>
+                <div class="hotel-description">
+                  <span class="hotel-type">Мотель</span>
+                  <span class="hotel-type">От 3000 Р.</span>
+                </div>
+                <a class="button details" href="desert.html">Подробнее</a>
+                <a class="button book" href="#">Забронировать</a>
+              <div class="stars">
+                <img class="star" src="img/star.svg" width="18" height="17" alt="3 звезды">
+                <img class="star" src="img/star.svg" width="18" height="17">
+                <img class="star" src="img/star.svg" width="18" height="17">
+              </div>
+              <div class="rating">Рейтинг: 8,9</div>
+            </li>
+
+            <li class="hotels-item">
+                <img src="img/villas " width="135" height="90" alt="Фото Villas at Poco Diablo">
+                  <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                  <div class="hotel-information">
+                    <span class="hotel-type">Апартаменты</span>
+                    <span class="hotel-price">От 2000 Р.</span>
+                  </div>
+                <a class="button details" href="villas.html">Подробнее</a>
+                <a class="button book" href="#">Забронировать</a>
+                <div class="stars">
+                  <img class="star" src="img/star.svg" width="18" height="17" alt="2 звезды">
+                  <img class="star" src="img/star.svg" width="18" height="17">
+                </div>
+                <div class="rating">Рейтинг: 9,2</div>
+              </li>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p class="hashtag">#visitsedona</p>
+      <ul class="footer-social">
+        <li><a class="social-button social-button-twitter" href="#">Twitter</a></li>
+        <li><a class="social-button social-button-facebook" href="#">Facebook</a></li>
+        <li><a class="social-button social-button-youtube" href="#">YouTube</a></li>
+      </ul>
+      <p class="footer-copyright">
+        <span>Website by</span>
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/htmlacademy-logo" width="115" height="41" alt="Логотип htmlacademy">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
