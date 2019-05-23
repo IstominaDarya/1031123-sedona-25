@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Welcome to Sedona!</title>
+    <title>Гостиницы Седоны</title>
   </head>
   <body>
     <header class="main-header">
@@ -24,7 +24,60 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!--Здесь будет форма-->
+        <form clas="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="pool" checked>Бассейн
+                </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input type="checkbox" name="parking">Парковка
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input type="checkbox" name="wifi">Wi-Fi
+                  </label>
+                </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li clas="filter-option">
+                <label>
+                  <input type="checkbox" name="hotel" checked>Гостиница
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="motel" checked>Мотель
+                </label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="apartment" checked>Апартаменты
+              </label>
+            </li>
+          </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки(Р):</legend>
+            <div class="output-area">
+              <output name="price"></output>
+              <span class="min">От 0</span>
+              <span class="max">До 3000</span>
+            </div>
+            <input type="range" min="0" max="3000">
+          </fieldset>
+          <button type="submit" class="button show">Показать</button>
+      </section>
+
+      <section class="filters-results">
+        <!--Здесь будет результат фильтра-->
       </section>
 
       <section class="catalog">

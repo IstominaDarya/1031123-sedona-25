@@ -21,7 +21,7 @@
     <main class="container">
       <section class="welcome-block">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img class="welcome-image" src="img/welcome-image.png" width="459" height="353" alt="Добро пожаловать!">
+        <img class="welcome-image" src="img/welcome-image.svg" width="459" height="353" alt="Добро пожаловать!">
         <p class="sedona-town">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="features-intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
@@ -32,9 +32,34 @@
 
       <section class="booking">
         <h2 class="booking-heading">Заинтересовались?</h2>
-        <p class="booking-intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="booking-intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="booking-header">поиск гостиницы в Седоне</a>
-        <!--Здесь будет форма-->
+        <!-- А здесь не надо заменить "поиск гостиницы" на legend?-->
+          <form class="booking" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="booking">
+              <li>
+                <label for="checkin-date">Дата заезда:</label>
+                  <input type="text" name="checkin-date" value="" placeholder="24 апреля 2017">
+              </li>
+              <li>
+                <label for="checkout-date">Дата выезда</label>
+                  <input type="text" name="checkout-date" value="" placeholder="4 июля 2017">
+              </li>
+              <li>
+                <label for="adults">Взрослые:</label>
+                  <button type="button" class="button less">Меньше</button>
+                  <input type="number" name="adults" value="" placeholder="2">
+                  <button type="button" class="button more">Больше</button>
+              </li>
+              <li>
+                <label for="children">Дети:</label>
+                  <button type="button" class="button less">Меньше</button>
+                  <input type="number" name="children" value="" placeholder="2">
+                  <button type="button" class="button more" >Больше</button>
+              </li>
+            </ul>
+            <button type="submit" class="button search">Найти</button>
+          </form>
       </section>
     </main>
 
