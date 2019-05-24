@@ -39,23 +39,25 @@
             <ul class="booking">
               <li>
                 <label for="checkin-date">Дата заезда:</label>
-                  <input type="text" name="checkin-date" value="" placeholder="24 апреля 2017">
+                <input type="text" id="checkin-date" name="checkin-date" value="" placeholder="24 апреля 2017">
+                <button type="button" class="calendar">Календарь</button>
               </li>
               <li>
                 <label for="checkout-date">Дата выезда</label>
-                  <input type="text" name="checkout-date" value="" placeholder="4 июля 2017">
+                <input type="text" id="checkout-date" name="checkout-date" value="" placeholder="4 июля 2017">
+                <button type="button" class="calendar">Календарь</button>
               </li>
               <li>
                 <label for="adults">Взрослые:</label>
-                  <button type="button" class="button less">Меньше</button>
-                  <input type="number" name="adults" value="" placeholder="2">
-                  <button type="button" class="button more">Больше</button>
+                <button type="button" class="button less">Меньше</button>
+                <input type="number" id="adults" name="adults" value="" placeholder="2">
+                <button type="button" class="button more">Больше</button>
               </li>
               <li>
                 <label for="children">Дети:</label>
-                  <button type="button" class="button less">Меньше</button>
-                  <input type="number" name="children" value="" placeholder="2">
-                  <button type="button" class="button more" >Больше</button>
+                <button type="button" class="button less">Меньше</button>
+                <input type="number" id="children" name="children" value="" placeholder="2">
+                <button type="button" class="button more" >Больше</button>
               </li>
             </ul>
             <button type="submit" class="button search">Найти</button>
