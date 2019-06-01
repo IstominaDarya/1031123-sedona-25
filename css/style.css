@@ -1,0 +1,386 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.hotels-page {
+  color: #000000;
+  background-color: #fefefe;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  background-color: #cacaca;
+}
+
+.site-navigation .site-navigation-current {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #766357;
+}
+
+.welcome-image {
+  background-image: url("../img/background-photo.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 773px;
+}
+
+.weclome-block {
+  background-color: #ffffff;
+  background-image: url("../img/polygon.svg");
+  width: 1201px;
+  height: 59px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.sedona-town {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.features-intro {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.booking {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.booking-heading {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.booking-intro {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/*
+Был комментарий по поводу порядка состояний. Вот здесь и дальше он неправильный?
+*/
+
+.open-booking {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+}
+
+.open-booking:hover {
+  background-color: #604e43;
+}
+
+.open-booking:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.booking input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.booking input:hover {
+  background-color: #ebebeb;
+}
+
+.booking input:focus {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.calendar {
+  background-color: #ffffff;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  border: none;
+}
+
+.less {
+  background-color: #ffffff;
+  background-image: url("../img/less.svg");
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+  border: none;
+}
+
+.more {
+  background-color: #ffffff;
+  background-image: url("../img/more.svg");
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+  border: none;
+}
+
+.button-search {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-search:hover {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.filters {
+  background-color: #81b3d2;
+  background-image: url("../img/filter-background.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 562px;
+
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 21px;
+}
+
+.filter-option {
+  color: #000000;
+}
+
+.filter-option:hover,
+.filter-option:focus {
+  color: #000000;
+}
+
+.button-show {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.button-show:hover,
+.button-show:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.hotels-item {
+  border-top: 1px solid #e5e5e5;
+}
+
+.hotels-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-item h3 {
+  color: #000000;
+  font-size: 21pz;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotels-item h3:hover {
+  color: #81b3d2;
+}
+
+.hotels-item h3:focus {
+  color: #cacaca;
+}
+
+.details {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.details:hover {
+  background-color: #669ec0;
+}
+
+.details:focus {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.book {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+}
+
+.book:hover {
+  background-color: #604e43;
+}
+
+.book:focus {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.rating {
+  text-align: right;
+  color: #666666;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 27px;
+}
+
+.stars {
+  text-align: right;
+}
+
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-footer p {
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  text-align: center;
+  list-style: none;
+}
+
+.footer-social a {
+  color: #000000;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #88b6d1;
+}
+
+.footer-copyright {
+  text-align: right;
+}
+
+.footer-copyright span {
+  text-align: right;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer-copyright a {
+  background-image: url("../img/logo-htmlacademy.svg");
+  width: 115px;
+  height: 41px;
+  background-repeat: no-repeat;
+}
