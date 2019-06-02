@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin,cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="hotels-page">
@@ -17,7 +17,7 @@
             <li><a href="info.html">Информация</a></li>
             <li><a href="photos-and-videos.html">Фото и видео</a></li>
             <li><a href="state-map.html">Карта штата</a></li>
-            <li><a class="site-navigation site-navigation-current">Гостиницы</a></li>
+            <li><a class="site-navigation-current">Гостиницы</a></li>
           </ul>
       </nav>
     </header>
@@ -54,12 +54,12 @@
           <fieldset>
             <legend>Тип жилья:</legend>
             <ul>
-              <li clas="filter-option">
+              <li class="filter-option">
                 <label>
                   <input class="filter-input" type="checkbox" name="hotel" checked>Гостиница
                 </label>
               </li>
-              <li>
+              <li class="filter-option">
                 <label>
                   <input class="filter-input" type="checkbox" name="motel" checked>Мотель
                 </label>
@@ -90,7 +90,7 @@
         <ul class="hotels-list">
           <li class="hotels-item">
             <img src="img/amara.jpg" width="135" height="90" alt="Фото Amara Resort & Spa">
-            <h3 class="hotel-name">Amara Resort & Spa</h3>
+            <h3><a class="hotel-name" href="#">Amara Resort & Spa</a></h3>
             <div class="hotel-description">
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 4000 Р.</span>
@@ -110,7 +110,7 @@
 
           <li class="hotels-item">
               <img src="img/desert.jpg" width="135" height="90" alt="Фото Desert Quail Inn">
-              <h3 class="hotel-name">Desert Quail Inn</h3>
+              <h3><a class="hotel-name" href="#">Desert Quail Inn</a></h3>
               <div class="hotel-description">
                 <span class="hotel-type">Мотель</span>
                 <span class="hotel-type">От 3000 Р.</span>
@@ -127,7 +127,7 @@
 
             <li class="hotels-item">
                 <img src="img/villas.jpg" width="135" height="90" alt="Фото Villas at Poco Diablo">
-                <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                <h3><a class="hotel-name" href="#">Villas at Poco Diablo</a></h3>
                 <div class="hotel-information">
                   <span class="hotel-type">Апартаменты</span>
                   <span class="hotel-price">От 2000 Р.</span>
@@ -153,7 +153,7 @@
       <p class="footer-copyright">
         <span>Website by</span>
         <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="Логотип htmlacademy">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
         </a>
       </p>
     </footer>

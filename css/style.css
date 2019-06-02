@@ -1,14 +1,27 @@
+img {
+  max-width: 100%
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+}
 
+.container {
+  text-align: center;
   background-color: #ffffff;
 }
 
@@ -22,14 +35,11 @@ a {
 }
 
 .main-navigation {
-  font-size: 14px;
   font-weight: 700;
-  line-height: 26px;
-  color: #000000;
   background-color: #ffffff;
 }
 
-.site-navigation {
+ul {
   list-style: none;
 }
 
@@ -42,51 +52,25 @@ a {
 }
 
 .site-navigation a:active {
-  background-color: #cacaca;
+  color: #cacaca;
 }
 
 .site-navigation .site-navigation-current {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #766357;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.welcome-image {
-  background-image: url("../img/background-photo.jpg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  width: 1200px;
-  height: 773px;
-}
-
-.weclome-block {
-  background-color: #ffffff;
-  background-image: url("../img/polygon.svg");
-  width: 1201px;
-  height: 59px;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
+.welcome-block {
+  background: url("../img/background-photo.jpg") top center 1200px 773px no-repeat,
+              url("../img/polygon.svg") bottom center 1200px 59px no-repeat;
+            }
 
 .sedona-town {
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
   color: #000000;
-  text-transform: uppercase;
-}
-
-.features-intro {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #333333;
-  text-transform: uppercase;
 }
 
 .booking {
-  list-style: none;
   background-color: #ffffff;
 }
 
@@ -98,15 +82,8 @@ a {
 }
 
 .booking-intro {
-  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
-  color: #333333;
 }
-
-/*
-Был комментарий по поводу порядка состояний. Вот здесь и дальше он неправильный?
-*/
 
 .open-booking {
   font-family: "PT Sans", Arial, sans-serif;
@@ -115,10 +92,10 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #766357;
-  border: none;
+  width: 568px;
+  height: 86px;
 }
 
 .open-booking:hover {
@@ -126,7 +103,7 @@ a {
 }
 
 .open-booking:active {
-  color: #928a85;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -135,9 +112,32 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
   background-color: #f2f2f2;
-  border: none;
+  border: 1px solid transparent;
+  width: 346px;
+  height: 38px;
+}
+
+.booking input::-moz-placeholder {
+  color: #000000;
+}
+
+.booking input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.booking input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.booking input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.booking input::placeholder {
+  color: #000000;
 }
 
 .booking input:hover {
@@ -150,6 +150,7 @@ a {
 }
 
 .calendar {
+  font-size: 0px;
   background-color: #ffffff;
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
@@ -159,6 +160,7 @@ a {
 }
 
 .less {
+  font-size: 0px;
   background-color: #ffffff;
   background-image: url("../img/less.svg");
   background-repeat: no-repeat;
@@ -168,6 +170,7 @@ a {
 }
 
 .more {
+  font-size: 0px;
   background-color: #ffffff;
   background-image: url("../img/more.svg");
   background-repeat: no-repeat;
@@ -183,10 +186,11 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #81b3d2;
-  border: none;
+  border: transparent;
+  width: 458px;
+  height: 58px;
 }
 
 .button-search:hover {
@@ -194,17 +198,17 @@ a {
 }
 
 .button-search:active {
-  color: #94b9d2;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 .filters {
+  color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../img/filter-background.jpg");
-  background-position: top left;
+  background-position: top center;
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 562px;
+  background-size: 1200px 562px;
 
 }
 
@@ -213,7 +217,6 @@ a {
 }
 
 .filters legend {
-  color: #ffffff;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -224,26 +227,18 @@ a {
   line-height: 21px;
 }
 
-.filter-option {
-  color: #000000;
-}
-
-.filter-option:hover,
-.filter-option:focus {
-  color: #000000;
-}
-
 .button-show {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
+  width: 141px;
+  height: 40px;
 }
 
 .button-show:hover,
@@ -264,19 +259,18 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.hotels-item h3 {
+.hotel-name {
   color: #000000;
-  font-size: 21pz;
-  line-height: 26px;
+  font-size: 21px;
   font-weight: 700;
 }
 
-.hotels-item h3:hover {
+.hotel-name:hover {
   color: #81b3d2;
 }
 
-.hotels-item h3:focus {
-  color: #cacaca;
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .details {
@@ -286,18 +280,18 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #81b3d2;
-  border: none;
+  width: 110px;
+  height: 27px;
 }
 
 .details:hover {
   background-color: #669ec0;
 }
 
-.details:focus {
-  color: #94b9d2;
+.details:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -308,30 +302,25 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #766357;
-  border: none;
+  width: 142px;
+  height: 27px;
 }
 
 .book:hover {
   background-color: #604e43;
 }
 
-.book:focus {
-  color: #928a85;
+.book:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
 .rating {
-  text-align: right;
   color: #666666;
-  font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   background-color: #f2f2f2;
-  width: 110px;
-  height: 27px;
 }
 
 .stars {
@@ -340,15 +329,13 @@ a {
 
 .main-footer {
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer p {
   color: #000000;
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .footer-social {
@@ -356,13 +343,34 @@ a {
   list-style: none;
 }
 
-.footer-social a {
-  color: #000000;
+.social-button-twitter {
+  font-size: 0px;
+  background-image: url("../img/twitter.svg");
+  background-size: 12px 12px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 48px;
 }
 
-.footer-social a:hover,
-.footer-social a:focus {
-  color: #88b6d1;
+.social-button-facebook {
+  font-size: 0px;
+  background-image: url("../img/facebook.svg");
+  background-size: 12px 12px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 48px;
+}
+
+.social-button-youtube {
+  font-size: 0px;
+  background-image: url("../img/youtube.svg");
+  background-size: 12px 12px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 48px;
 }
 
 .footer-copyright {
@@ -371,16 +379,8 @@ a {
 
 .footer-copyright span {
   text-align: right;
+  color: #000000;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.footer-copyright a {
-  background-image: url("../img/logo-htmlacademy.svg");
-  width: 115px;
-  height: 41px;
-  background-repeat: no-repeat;
 }
