@@ -1,9 +1,11 @@
 img {
   max-width: 100%
 }
+
 html {
   box-sizing: border-box;
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -21,8 +23,7 @@ body {
 }
 
 .container {
-  text-align: center;
-  background-color: #ffffff;
+  background-color: #fefefe;
 }
 
 .hotels-page {
@@ -39,7 +40,7 @@ a {
   background-color: #ffffff;
 }
 
-ul {
+.site-navigation {
   list-style: none;
 }
 
@@ -52,17 +53,25 @@ ul {
 }
 
 .site-navigation a:active {
-  color: #cacaca;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation .site-navigation-current {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.visually-hidden {
+  font-size: 0px;
+}
+
 .welcome-block {
-  background: url("../img/background-photo.jpg") top center 1200px 773px no-repeat,
-              url("../img/polygon.svg") bottom center 1200px 59px no-repeat;
-            }
+  text-align: center;
+  background-color: #f2f2f2;
+  background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1200px auto, 1200px 773px;
+  background-position: bottom center, top center;
+}
 
 .sedona-town {
   font-size: 21px;
@@ -71,6 +80,7 @@ ul {
 }
 
 .booking {
+  text-align: center;
   background-color: #ffffff;
 }
 
@@ -94,8 +104,6 @@ ul {
   text-align: center;
   text-transform: uppercase;
   background-color: #766357;
-  width: 568px;
-  height: 86px;
 }
 
 .open-booking:hover {
@@ -107,6 +115,10 @@ ul {
   background-color: #503e33;
 }
 
+.booking-fields {
+  list-style: none;
+}
+
 .booking input {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -116,8 +128,6 @@ ul {
   color: #000000;
   background-color: #f2f2f2;
   border: 1px solid transparent;
-  width: 346px;
-  height: 38px;
 }
 
 .booking input::-moz-placeholder {
@@ -189,8 +199,6 @@ ul {
   text-transform: uppercase;
   background-color: #81b3d2;
   border: transparent;
-  width: 458px;
-  height: 58px;
 }
 
 .button-search:hover {
@@ -237,8 +245,6 @@ ul {
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid white;
-  width: 141px;
-  height: 40px;
 }
 
 .button-show:hover,
@@ -282,8 +288,6 @@ ul {
   text-align: center;
   text-transform: uppercase;
   background-color: #81b3d2;
-  width: 110px;
-  height: 27px;
 }
 
 .details:hover {
@@ -304,8 +308,6 @@ ul {
   text-align: center;
   text-transform: uppercase;
   background-color: #766357;
-  width: 142px;
-  height: 27px;
 }
 
 .book:hover {
@@ -343,34 +345,31 @@ ul {
   list-style: none;
 }
 
-.social-button-twitter {
+.social-button {
+  display: block;
   font-size: 0px;
-  background-image: url("../img/twitter.svg");
-  background-size: 12px 12px;
+  background-size: 46px 48px;
   background-color: #81b3d2;
   background-repeat: no-repeat;
-  height: 48px;
-  width: 48px;
+}
+
+
+.social-button-twitter {
+  background-image: url("../img/twitter.svg");
+  background-size: 17px 15px;
+  background-position: center;
 }
 
 .social-button-facebook {
-  font-size: 0px;
   background-image: url("../img/facebook.svg");
-  background-size: 12px 12px;
-  background-color: #81b3d2;
-  background-repeat: no-repeat;
-  height: 48px;
-  width: 48px;
+  background-size: 12px 22px;
+  background-position: center;
 }
 
 .social-button-youtube {
-  font-size: 0px;
   background-image: url("../img/youtube.svg");
-  background-size: 12px 12px;
-  background-color: #81b3d2;
-  background-repeat: no-repeat;
-  height: 48px;
-  width: 48px;
+  background-size: 20px 16px;
+  background-position: center;
 }
 
 .footer-copyright {
