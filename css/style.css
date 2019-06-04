@@ -11,8 +11,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -36,12 +34,39 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  margin-bottom: 61px;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   background-color: #ffffff;
+  min-height: 71px;
+}
+
+.header-logo {
+  width: 140px;
+  height: 71px;
 }
 
 .site-navigation {
+  align-self: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  min-height: 56px;
+}
+
+.navigation-left-half {
+  display: flex;
+  justify-content: space-between;
+  width: 328px;
+}
+
+.navigation-right-half {
+  display: flex;
+  justify-content: space-between;
+  width: 328px;
+  order: 1;
 }
 
 .site-navigation a {
@@ -64,7 +89,25 @@ a {
   font-size: 0px;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .welcome-block {
+  margin: 0;
+  padding: 0;
   text-align: center;
   background-color: #f2f2f2;
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
@@ -351,25 +394,23 @@ a {
   background-size: 46px 48px;
   background-color: #81b3d2;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
 .social-button-twitter {
   background-image: url("../img/twitter.svg");
   background-size: 17px 15px;
-  background-position: center;
 }
 
 .social-button-facebook {
   background-image: url("../img/facebook.svg");
   background-size: 12px 22px;
-  background-position: center;
 }
 
 .social-button-youtube {
   background-image: url("../img/youtube.svg");
   background-size: 20px 16px;
-  background-position: center;
 }
 
 .footer-copyright {
