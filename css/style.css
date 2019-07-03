@@ -26,7 +26,7 @@ body {
   margin: 0 auto;
   padding: 0 0;
   background-color: #ffffff;
-  box-shadow: 0 0 5px #dbdbdb
+  box-shadow: 0 0 5px #dbdbdb;
 }
 
 .index-container {
@@ -302,13 +302,14 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-form {
-  width: 575px;
+  width: 576px;
   margin-bottom: 78px;
   background-color: #ffffff;
 }
 
 .booking-form-hide {
   display: none;
+  animation: bounce 0.5s;
 }
 
 .booking-wrapper {
@@ -326,7 +327,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
 }
 
-.booking:last-child {
+.booking-item:last-child {
   margin-bottom: 0px;
 }
 
@@ -403,9 +404,8 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar {
-  position: absolute;
   right: 0;
-  background: none;
+  background-color: #f2f2f2;
 }
 
 .more:hover line,
@@ -649,9 +649,7 @@ input[type="radio"].visually-hidden {
 
 .filters-result {
   display: flex;
-  padding-left: 73px;
-  padding-right: 73px;
-  padding-top: 30px;
+  padding: 30px 73px;
   align-items: center;
 }
 
@@ -730,12 +728,15 @@ li .current-sorting {
 .hotels-list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-item {
   border-top: 1px solid #e5e5e5;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 30px 73px;
 }
 
@@ -744,22 +745,22 @@ li .current-sorting {
 }
 
 .hotel-image {
-  height: 95px;
   width: 135px;
   margin-right: 30px;
 }
 
-.hotels-item-info {
-}
-
-.hotel-description {
+.hotel-item-info {
+  width: 290px;
+  padding-left: 30px;
+  margin-right: auto;
 }
 
 .hotel-name {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .hotel-name:hover {
@@ -768,6 +769,14 @@ li .current-sorting {
 
 .hotel-name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-type,
+.hotel-price {
+  display: inline-block;
+  vertical-align: middle;
+  width: 110px;
+  margin-bottom: 10px;
 }
 
 .hotel-button {
@@ -825,8 +834,7 @@ li .current-sorting {
 }
 
 .main-footer {
-  padding-bottom: 35px;
-  padding-top: 35px;
+  padding: 35px 0;
   display: flex;
   align-items: center;
   color: #000000;
@@ -899,8 +907,10 @@ li .current-sorting {
 }
 
 .footer-copyright {
+  display: flex;
   width: 400px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-logo {
@@ -916,7 +926,6 @@ li .current-sorting {
 }
 
 .footer-copyright span {
-  padding-bottom: 20px;
   padding-right: 10px;
   color: #000000;
   font-size: 14px;
