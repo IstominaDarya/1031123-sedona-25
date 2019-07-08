@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  width: 100%;
   background-color: #f2f2f2;
 }
 
@@ -26,7 +27,8 @@ body {
   margin: 0 auto;
   padding: 0 0;
   background-color: #ffffff;
-  box-shadow: 0 0 5px #dbdbdb;
+  box-shadow: 10px 0 10px 0px #dbdbdb,
+    -10px 0 10px 0px #dbdbdb;
 }
 
 .index-container {
@@ -49,6 +51,8 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  padding: 0 73px;
   font-weight: 700;
   background-color: #ffffff;
 }
@@ -64,14 +68,12 @@ a {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 72px;
-  padding-right: 72px;
   margin: 0;
   list-style: none;
 }
 
 .site-navigation li {
-  min-width: 320px;
+  width: 300px;
 }
 
 .navigation-item-left {
@@ -190,6 +192,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
   padding-top: 25px;
   padding-bottom: 30px;
+}
+
+.feature-name {
+  width: 160px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .feature-major-second img {
