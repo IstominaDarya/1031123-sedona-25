@@ -31,7 +31,7 @@ body {
     -10px 0 10px 0px #dbdbdb;
 }
 
-.index-container {
+.modal-map {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -46,46 +46,49 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  margin: 0px 0px;
-}
-
-.main-navigation {
-  display: flex;
-  padding: 0 73px;
-  font-weight: 700;
-  background-color: #ffffff;
-}
-
 .header-logo {
   position: absolute;
-  left: 46%;
-  width: 140px;
+  z-index: 1;
+  width: 138px;
   height: 71px;
+  left: 50%;
+  top: 0;
+  margin-left: -69px;
 }
 
 .site-navigation {
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0;
   list-style: none;
-}
-
-.site-navigation li {
-  width: 300px;
-}
-
-.navigation-item-left {
+  margin: 0;
+  padding: 0px 72px;
+  display: flex;
   text-align: left;
 }
 
-.navigation-item-right {
+.site-navigation li {
+  width: 240px;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}
+
+.site-navigation li:nth-child(n+3) {
   text-align: right;
 }
 
+a {
+  text-decoration: none;
+}
+
 .site-navigation a {
-  color: #000000;
+  color: #766357;
+  font-weight: 700;
+}
+
+.site-navigation a {
+  color: inherit;
 }
 
 .site-navigation a:hover {
@@ -93,11 +96,7 @@ a {
 }
 
 .site-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.site-navigation .site-navigation-current {
-  color: rgba(0, 0, 0, 0.3);
+  color: #c9c9c9;
 }
 
 .visually-hidden {
@@ -127,7 +126,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 1200px auto, 1200px 537px;
-  background-position: center 479px, top center;
+  background-position: center 480px, top center;
 }
 
 .welcome-image {
@@ -258,6 +257,7 @@ input[type="radio"].visually-hidden {
 }
 
 .booking {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
